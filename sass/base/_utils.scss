@@ -1,0 +1,25 @@
+// colors
+
+.hidden {
+  display: none !important;
+}
+
+// Color Classes
+
+.d-gray {
+  color: $dark-gray-color;
+}
+
+.white {
+  color: $white;
+}
+
+// Padding Classes
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-25 {
+  padding-top: 25rem;
+}
