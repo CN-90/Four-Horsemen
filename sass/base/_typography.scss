@@ -3,13 +3,17 @@
 }
 
 .header-secondary {
-  font-size: 6rem;
+  font-size: 4.5rem;
 }
 
 .header-tertiary {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
+.sub-text {
+  font-size: 2.3rem;
+  text-indent: 2rem;
+}
 .center {
   text-align: center;
 }
@@ -20,4 +24,8 @@
 
 .bold {
   font-weight: bold;
+}
+
+.ls-5 {
+  letter-spacing: 5px;
 }

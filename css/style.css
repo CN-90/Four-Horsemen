@@ -20,6 +20,9 @@ html {
   cursor: pointer;
   z-index: 100; }
 
+a:hover {
+  color: white; }
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 45%; } }
@@ -28,10 +31,14 @@ html {
   font-size: 8rem; }
 
 .header-secondary {
-  font-size: 6rem; }
+  font-size: 4.5rem; }
 
 .header-tertiary {
-  font-size: 4rem; }
+  font-size: 3rem; }
+
+.sub-text {
+  font-size: 2.3rem;
+  text-indent: 2rem; }
 
 .center {
   text-align: center; }
@@ -42,14 +49,23 @@ html {
 .bold {
   font-weight: bold; }
 
+.ls-5 {
+  letter-spacing: 5px; }
+
 .hidden {
   display: none !important; }
+
+.fixed {
+  position: fixed; }
 
 .d-gray {
   color: #676767; }
 
+.l-gray {
+  color: #d1d1d1; }
+
 .white {
-  color: #ececec; }
+  color: #dcdcdc; }
 
 .pt-5 {
   padding-top: 5rem; }
@@ -57,21 +73,39 @@ html {
 .pt-25 {
   padding-top: 25rem; }
 
+.pb-1 {
+  padding-bottom: 2px; }
+
+.pl-5 {
+  padding-left: 5rem; }
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background: #fe7011; }
+
+.flex-row {
+  display: flex; }
+
 .btn {
   border: none;
   padding: 1.5rem;
   border-radius: 5px;
   width: 250px;
   font-size: 1.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  letter-spacing: 1px; }
 
 .btn-orange {
   background: #fe7011; }
+  .btn-orange:hover {
+    background: #ff6600; }
 
-.about {
-  height: 800px;
-  background: #252525;
-  width: 100%; }
+@media only screen and (max-width: 768px) {
+  .btn {
+    width: 225px;
+    padding: 2rem;
+    font-size: 2rem; } }
 
 .hero {
   height: 100vh;
@@ -125,7 +159,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ececec; }
+    color: #dcdcdc;
+    letter-spacing: 5px; }
     .hero__text-box_btn-container {
       padding-top: 5rem;
       z-index: 1; }
@@ -147,5 +182,28 @@ html {
 @media only screen and (max-width: 768px) {
   .hero__options {
     display: none; }
+  .hero .header-primary {
+    font-size: 7rem; }
+  .hero .ls-5 {
+    letter-spacing: 2px; }
   .hero__logo-box {
     height: 120px; } }
+
+.about {
+  height: 800px;
+  background: #1d1d1d;
+  width: 100%; }
+  .about__img-container {
+    height: 400px;
+    width: 40%; }
+    .about__img-container img {
+      height: 100%;
+      width: 100%; }
+  .about__content {
+    height: 100%;
+    width: 100%; }
+    .about__content-img-container {
+      width: 200px;
+      height: 100%; }
+    .about__content-text {
+      width: 55%; }

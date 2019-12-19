@@ -68,6 +68,7 @@
     justify-content: center;
     align-items: center;
     color: $white;
+    letter-spacing: 5px;
 
     &_btn-container {
       padding-top: 5rem;
@@ -100,6 +101,14 @@
   .hero {
     &__options {
       display: none;
+    }
+
+    .header-primary {
+      font-size: 7rem;
+    }
+
+    .ls-5 {
+      letter-spacing: 2px;
     }
 
     &__logo-box {

@@ -5,8 +5,21 @@
   width: 250px;
   font-size: 1.5rem;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .btn-orange {
   background: $orange-color;
+
+  &:hover {
+    background: #ff6600;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    width: 225px;
+    padding: 2rem;
+    font-size: 2rem;
+  }
 }

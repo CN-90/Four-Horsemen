@@ -2,4 +2,28 @@
   height: 800px;
   background: $seconday-black-color;
   width: 100%;
+
+  &__img-container {
+    height: 400px;
+    width: 40%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+
+    &-img-container {
+      width: 200px;
+      height: 100%;
+    }
+
+    &-text {
+      width: 55%;
+    }
+  }
 }
