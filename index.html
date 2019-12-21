@@ -5,6 +5,10 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amaranth|Kreon&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -57,15 +61,25 @@
     </section>
     <!-- HERO END -- HERO END -->
     <section class="about">
+      <div class="about__background-img"></div>
       <div class="container">
         <div class="about__content flex-row">
           <div class="about__img-container">
-            <img src="./assets/tattoo.jpg" alt="" />
+            <img
+              class="about__img-container_img-one"
+              src="./assets/tattoo_parlor.jpg"
+              alt=""
+            />
+            <img
+              class="about__img-container-img-two"
+              src="./assets/tattoo.jpg"
+              alt=""
+            />
           </div>
           <div class="about__content-text pl-5">
-            <h1 class="white header-secondary pb-1">ABOUT US</h1>
+            <h1 class="light white header-secondary pb-5">ABOUT US</h1>
             <div class="separator"></div>
-            <p class="l-gray sub-text pt-5">
+            <p class="l-gray sub-text pt-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               laudantium explicabo! Rem veniam soluta, dolorum laudantium
               numquam nisi! Ex, tempore libero repellendus magni sint quidem ad
@@ -73,11 +87,17 @@
               soluta facere aperiam eaque nesciunt quas itaque. Ex corporis sed
               commodi non veritatis. Quos, omnis voluptatem!
             </p>
+            <div class="about__content-btn-container">
+              <button class="about__content-btn btn btn-orange bold pt-5">
+                VIEW ARTISTS
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ABOUT END -- ABOUT END -->
+    <section class="testimonials"></section>
 
     <!-- SCRIPTS -->
     <script src="index.js"></script>

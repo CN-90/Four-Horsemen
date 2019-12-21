@@ -9,13 +9,12 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat';
 }
 
 .container {
-  padding-top: 10rem;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -30,7 +29,13 @@ a:hover {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   html {
     font-size: 45%;
   }
