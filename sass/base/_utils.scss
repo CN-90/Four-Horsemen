@@ -1,5 +1,3 @@
-// colors
-
 .hidden {
   display: none !important;
 }
@@ -8,10 +6,21 @@
   position: fixed;
 }
 
+.fr {
+  float: right;
+}
+
+table {
+  width: 80%;
+}
 // Color Classes
 
 .orange {
   color: $orange-color;
+}
+
+.l-orange {
+  color: $light-orange;
 }
 
 .d-gray {
@@ -27,9 +36,20 @@
 }
 
 // Padding Classes
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
 
 .pt-5 {
   padding-top: 5rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
 }
 
 .pt-25 {
@@ -40,8 +60,8 @@
   padding-bottom: 5px;
 }
 
-.pt-3 {
-  padding-top: 3rem;
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 .pl-5 {

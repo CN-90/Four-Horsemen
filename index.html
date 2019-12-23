@@ -14,7 +14,9 @@
   <body>
     <section class="hero">
       <div class="hero__video_container">
-        <video autoplay loop src="./assets/Pexels Videos 1086535.mp4"></video>
+        <video autoplay loop>
+          <source src="./assets/video.mp4" type="video/mp4" />
+        </video>
       </div>
       <nav id="hero__nav" class="hero__nav">
         <div class="hero__logo-box pt-5">
@@ -44,7 +46,7 @@
         </div>
       </nav>
       <div class="hero__text-box center">
-        <h1 class="header-primary ls-5">FOUR HORSEMEN</h1>
+        <h1 class="header-primary">FOUR HORSEMEN</h1>
         <h3 class="d-gray light header-tertiary">TATTOO & PIERCING</h3>
         <div class="hero__text-box_btn-container">
           <button class="btn btn-orange bold pt-5">BOOK APPOINTMENT</button>
@@ -77,7 +79,7 @@
             />
           </div>
           <div class="about__content-text pl-5">
-            <h1 class="light white header-secondary pb-5">ABOUT US</h1>
+            <h2 class="light white header-secondary pb-5">ABOUT US</h2>
             <div class="separator"></div>
             <p class="l-gray sub-text pt-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
@@ -97,9 +99,74 @@
       </div>
     </section>
     <!-- ABOUT END -- ABOUT END -->
-    <section class="testimonials"></section>
+    <section class="contact">
+      <!-- <div class="contact__background-img"></div> -->
+
+      <div class="container">
+        <h2 class="light white header-secondary pb-5 pt-10">FOUR HORSEMEN</h2>
+        <div class="separator"></div>
+
+        <div class="contact__content flex-row">
+          <div class="contact__content-details">
+            <p class="white sm-txt pt-1">5732 Fake St, Tucson, Arizona</p>
+            <p class="white sm-txt pt-1">(520) 555-5555</p>
+            <table class="pt-5">
+              <tr>
+                <td><p class="l-gray pb-1 sm-txt">Monday</p></td>
+                <td>
+                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                </td>
+              </tr>
+              <tr>
+                <td><p class="l-gray pb-1 sm-txt">Tuesday</p></td>
+                <td>
+                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                </td>
+              </tr>
+              <tr>
+                <td><p class="l-gray pb-1 sm-txt">Wednesday</p></td>
+                <td>
+                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                </td>
+              </tr>
+              <tr>
+                <td><p class="l-gray pb-1 sm-txt">Thursday</p></td>
+                <td>
+                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                </td>
+              </tr>
+              <tr>
+                <td><p class="l-gray pb-1 sm-txt">Friday</p></td>
+                <td>
+                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                </td>
+              </tr>
+            </table>
+
+            <div class="hero__text-box_btn-container">
+              <button class="btn btn-orange bold pt-5">BOOK APPOINTMENT</button>
+            </div>
+          </div>
+          <div id="map" class="contact__content-map-location">
+            <!-- <iframe
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?q=3045%20E%20Broadway%20Blvd%2C%20Tucson%2C%20AZ%2085716&key=AIzaSyBZk5U2-l6vwyz4SsgjCpv_lMTswG1Rg3M"
+              allowfullscreen
+            ></iframe> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- SCRIPTS -->
     <script src="index.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZk5U2-l6vwyz4SsgjCpv_lMTswG1Rg3M&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>

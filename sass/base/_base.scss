@@ -16,6 +16,7 @@ html {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .link {
@@ -27,6 +28,10 @@ html {
 
 a:hover {
   color: white;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 1200px) {

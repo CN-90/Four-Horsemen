@@ -4,5 +4,6 @@
 @import './base/utils';
 @import './layout/grid';
 @import './components/button';
-@import './sections/hero.scss';
-@import './sections/about.scss';
+@import './pages/home/hero.scss';
+@import './pages/home/about.scss';
+@import './pages/home/contact.scss';

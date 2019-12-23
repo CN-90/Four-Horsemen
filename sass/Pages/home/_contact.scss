@@ -1,0 +1,54 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  background: #0e0e0e;
+  position: relative;
+
+  &__background-img {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1475695752828-6d2b0a83cf8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    background-position: bottom;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to right, #000, #0e0e0e);
+      opacity: 0.9;
+      // background: rgba(10, 10, 10, 0.9);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__content {
+    height: 500px;
+
+    &-details {
+      height: 100%;
+      width: 50%;
+    }
+
+    &-map-location {
+      background: #1e1e1e;
+      height: 80%;
+      width: 50%;
+      align-self: center;
+    }
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
