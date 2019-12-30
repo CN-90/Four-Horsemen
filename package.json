@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/home.scss css/home.css sass/artists.scss css/artists.css -w"
   },
   "author": "",
   "license": "ISC"

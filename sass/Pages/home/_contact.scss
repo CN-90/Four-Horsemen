@@ -52,3 +52,30 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 812px) {
+  .contact {
+    &__content {
+      height: 700px;
+      padding-bottom: 4rem;
+
+      &-details {
+        width: 100%;
+      }
+
+      &-map-location {
+        background: #1e1e1e;
+        width: 100%;
+        align-self: center;
+      }
+    }
+
+    #contact-button {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+    }
+  }
+}

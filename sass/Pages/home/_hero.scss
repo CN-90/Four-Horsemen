@@ -15,22 +15,6 @@
     cursor: pointer;
   }
 
-  &__nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__logo-box {
-    height: 140px;
-
-    img {
-      height: 100%;
-    }
-  }
-
   &__options {
     color: $light-gray-color;
     list-style: none;
@@ -87,12 +71,18 @@
   &__hamburger-menu {
     cursor: pointer;
     z-index: 1;
+
+    &:hover {
+      .hamburger-bar {
+        background: $light-orange;
+      }
+    }
   }
 
   .hamburger-bar {
     height: 2px;
     width: 30px;
-    background: white;
+    background: $light-gray-color;
     margin: 10px;
   }
 }
@@ -101,6 +91,10 @@
   .hero {
     &__options {
       display: none;
+    }
+
+    &__hamburger-menu {
+      display: block !important;
     }
 
     .header-primary {

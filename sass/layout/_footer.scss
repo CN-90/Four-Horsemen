@@ -1,0 +1,32 @@
+.footer {
+  height: 150px;
+  background: #181717;
+  width: 100%;
+  color: rgb(243, 243, 243);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__details {
+    line-height: 3rem;
+
+    h2 {
+      cursor: pointer;
+      &:hover {
+        color: $light-orange;
+      }
+    }
+  }
+
+  i {
+    padding-right: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $light-orange;
+    }
+  }
+}

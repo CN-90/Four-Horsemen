@@ -4,35 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Four Horsemen</title>
     <link
       href="https://fonts.googleapis.com/css?family=Amaranth|Kreon&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
+    <div id="menu-modal" class="menu-modal">
+      <h1 id="exit-modal" class="light header-secondary white fr">
+        X
+      </h1>
+      <div id="modal-container" class="container">
+        <div id="menu-modal-options" class="menu-modal-options">
+          <ul>
+            <li class="menu-modal-option">HOME</li>
+            <li class="menu-modal-option">
+              <a class='link' href="artists.html">ARTISTS</a class='link'>
+            </li>
+            <li class="menu-modal-option">GALLERY</li>
+            <li class="menu-modal-option">CONTACT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="hero">
       <div class="hero__video_container">
         <video autoplay loop>
           <source src="./assets/video.mp4" type="video/mp4" />
         </video>
       </div>
-      <nav id="hero__nav" class="hero__nav">
-        <div class="hero__logo-box pt-5">
+      <nav id="hero__nav" class="nav">
+        <div class="logo-box pt-5">
           <img src="./assets/horselogo.png" alt="horse-logo" />
         </div>
-        <div class="hero__hamburger-menu hidden">
+        <div id="hamburger" class="hero__hamburger-menu hidden">
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
         </div>
         <ul class="hero__options">
           <li class="hero__options-item">
-            <a class="link" href="#">ABOUT</a>
+            <a class="link" href="index.html">HOME</a>
           </li>
           <li class="hero__options-item">
-            <a class="link" href="#">ARTISTS</a>
+            <a class="link" href="artists.html">ARTISTS</a>
           </li>
           <li class="hero__options-item">
             <a class="link" href="#">GALLERY</a>
@@ -41,7 +65,7 @@
             <a class="link" href="#">CONTACT</a>
           </li>
         </ul>
-        <div class="hero__logo-box pt-5">
+        <div class="logo-box pt-5">
           <img src="./assets/horselogoleft.png" alt="horse-logo" />
         </div>
       </nav>
@@ -53,10 +77,10 @@
         </div>
       </div>
       <div class="hero__logo-container">
-        <div class="hero__logo-box">
+        <div class="logo-box">
           <img src="./assets/horselogo.png" alt="horse-logo" />
         </div>
-        <div class="hero__logo-box">
+        <div class="logo-box">
           <img src="./assets/horselogoleft.png" alt="horse-logo" />
         </div>
       </div>
@@ -143,23 +167,32 @@
               </tr>
             </table>
 
-            <div class="hero__text-box_btn-container">
+            <div id="contact-button" class="hero__text-box_btn-container">
               <button class="btn btn-orange bold pt-5">BOOK APPOINTMENT</button>
             </div>
           </div>
-          <div id="map" class="contact__content-map-location">
-            <!-- <iframe
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?q=3045%20E%20Broadway%20Blvd%2C%20Tucson%2C%20AZ%2085716&key=AIzaSyBZk5U2-l6vwyz4SsgjCpv_lMTswG1Rg3M"
-              allowfullscreen
-            ></iframe> -->
-          </div>
+          <div id="map" class="contact__content-map-location"></div>
         </div>
       </div>
     </section>
+
+    <!-- CONTACT ME END  -->
+    <!-- CONTACT ME END  -->
+
+    <footer class="footer">
+      <div class="container">
+        <h2>FOUR HORSEMEN</h2>
+
+        <div class="footer__social-media">
+          <i class="fab fa-facebook-f fa-3x"></i>
+          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-twitter fa-3x"></i>
+        </div>
+        <div class="footer__details">
+          <h2 class="light">CAREERS</h2>
+        </div>
+      </div>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="index.js"></script>
