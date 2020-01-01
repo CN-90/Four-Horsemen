@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: inherit; }
 
+body {
+  background: #131313; }
+
 html {
   font-size: 62.5%;
   font-family: 'Montserrat'; }
@@ -36,6 +39,9 @@ li {
     font-size: 45%; } }
 
 .header-primary {
+  font-size: 10rem; }
+
+.header-eight {
   font-size: 8rem; }
 
 .header-secondary {
@@ -44,7 +50,7 @@ li {
   letter-spacing: 2px; }
 
 .header-tertiary {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Amaranth', sans-serif; }
 
 .sm-txt {
@@ -93,6 +99,11 @@ table {
 .white {
   color: #dcdcdc; }
 
+.active {
+  color: white; }
+  .active:hover {
+    color: darkorange; }
+
 .pt-1 {
   padding-top: 1rem; }
 
@@ -104,6 +115,9 @@ table {
 
 .pt-10 {
   padding-top: 10rem; }
+
+.pt-15 {
+  padding-top: 15rem; }
 
 .pt-25 {
   padding-top: 25rem; }
@@ -207,7 +221,8 @@ table {
     cursor: pointer;
     position: absolute;
     right: 15px;
-    top: 10px; }
+    top: 10px;
+    z-index: 5; }
     .menu-modal h1:hover {
       color: #f98333; }
   .menu-modal-options {

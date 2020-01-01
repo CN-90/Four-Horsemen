@@ -1,0 +1,116 @@
+.nav {
+  height: 100px;
+  width: 100%;
+  position: relative;
+
+  &__options {
+    color: $light-gray-color;
+    list-style: none;
+    display: flex;
+    z-index: 1;
+
+    &-item {
+      font-size: 2rem;
+      padding: 3rem;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &__hamburger-menu {
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      .hamburger-bar {
+        background: $light-orange;
+      }
+    }
+  }
+
+  .hamburger-bar {
+    height: 2px;
+    width: 30px;
+    background: $light-gray-color;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    &__options {
+      display: none;
+    }
+
+    &__hamburger-menu {
+      display: block !important;
+    }
+
+    .header-primary {
+      font-size: 6rem;
+    }
+
+    .ls-5 {
+      letter-spacing: 2px;
+    }
+
+    &__logo-box {
+      height: 120px;
+    }
+  }
+}
+
+.artists {
+  min-height: 1500px;
+  width: 100%;
+}
+
+.artist {
+  height: 350px;
+  margin-bottom: 10rem;
+
+  .header-secondary {
+    border-left: 5px solid $orange-color;
+    padding-left: 2rem;
+  }
+
+  &__image {
+    width: 25%;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      filter: grayscale(100%);
+    }
+  }
+
+  &__social-media {
+    color: white;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    i {
+      cursor: pointer;
+      padding-left: 1rem;
+      &:hover {
+        color: darkorange;
+      }
+    }
+  }
+
+  &__details {
+    width: 75%;
+    height: 100%;
+
+    position: relative;
+  }
+}
