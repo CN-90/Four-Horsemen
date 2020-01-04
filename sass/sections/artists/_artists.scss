@@ -42,7 +42,83 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+.background {
+  height: 100%;
+  width: 100%;
+  background: url('https://images.pexels.com/photos/2121348/pexels-photo-2121348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  position: fixed;
+  z-index: -5;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.9;
+  }
+}
+
+.artists {
+  min-height: 1500px;
+  width: 100%;
+}
+
+.artist {
+  height: 300px;
+  margin-bottom: 10rem;
+
+  h2 {
+    color: #dedede;
+    border-left: 10px solid $orange-color;
+    padding-left: 2rem;
+  }
+
+  &__image {
+    width: 25%;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      filter: grayscale(100%);
+    }
+  }
+
+  &__social-media {
+    color: #e89861;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .fa-twitter {
+      color: #3991ff;
+    }
+
+    i {
+      cursor: pointer;
+      padding-left: 1rem;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &__details {
+    width: 75%;
+    height: 100%;
+
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  // MEDIA QUERIES FOR NAVBAR AND HAMBURGER MENU
+  .sm-txt {
+    font-size: 2.5rem;
+  }
   .nav {
     &__options {
       display: none;
@@ -64,53 +140,80 @@
       height: 120px;
     }
   }
-}
 
-.artists {
-  min-height: 1500px;
-  width: 100%;
-}
+  .artists {
+    text-align: center;
 
-.artist {
-  height: 350px;
-  margin-bottom: 10rem;
-
-  .header-secondary {
-    border-left: 5px solid $orange-color;
-    padding-left: 2rem;
-  }
-
-  &__image {
-    width: 25%;
-    height: 100%;
-
-    img {
-      height: 100%;
-      width: 100%;
-      filter: grayscale(100%);
+    .header-secondary {
+      margin-top: 2rem;
     }
-  }
 
-  &__social-media {
-    color: white;
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    .artist {
+      height: auto;
+      &__image {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
 
-    i {
-      cursor: pointer;
-      padding-left: 1rem;
-      &:hover {
-        color: darkorange;
+        img {
+          height: 100%;
+          width: 100%;
+          filter: grayscale(100%);
+        }
+      }
+
+      &__social-media {
+        color: $light-orange;
+        text-align: center;
+        position: static;
+        padding-top: 2rem;
+        i {
+          cursor: pointer;
+          padding-left: 1rem;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      &__details {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        padding-left: 0;
+        position: relative;
       }
     }
   }
+}
 
-  &__details {
-    width: 75%;
-    height: 100%;
+@media only screen and (max-width: 1200px) {
+  .sm-txt {
+    font-size: 2.2rem;
+  }
+  .artist {
+    &__image {
+      width: 40%;
+      height: 100%;
 
-    position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%);
+      }
+    }
+
+    &__details {
+      width: 60%;
+      height: 100%;
+
+      position: relative;
+    }
+    &__social-media {
+      color: $light-orange;
+      text-align: right;
+      position: static;
+      padding-top: 2rem;
+    }
   }
 }

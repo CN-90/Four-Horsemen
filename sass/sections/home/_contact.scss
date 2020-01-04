@@ -4,8 +4,12 @@
   background: #0e0e0e;
   position: relative;
 
+  .header-secondary {
+    font-size: 5rem;
+  }
+
   &__background-img {
-    width: 60%;
+    width: 40%;
     height: 100%;
     position: absolute;
     background: url('https://images.unsplash.com/photo-1475695752828-6d2b0a83cf8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
