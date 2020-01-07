@@ -1,0 +1,48 @@
+.nav {
+  height: 100px;
+  width: 100%;
+  position: relative;
+
+  &__options {
+    color: $light-gray-color;
+    list-style: none;
+    display: flex;
+    z-index: 1;
+
+    &-item {
+      font-size: 2rem;
+      padding: 3rem;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &__hamburger-menu {
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      .hamburger-bar {
+        background: $light-orange;
+      }
+    }
+  }
+
+  .hamburger-bar {
+    height: 2px;
+    width: 30px;
+    background: $light-gray-color;
+    margin: 10px;
+  }
+}
+
+.gallery {
+  height: 1000px;
+  width: 100%;
+}

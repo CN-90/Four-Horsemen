@@ -55,7 +55,7 @@ li {
   font-family: 'Amaranth', sans-serif; }
 
 .sm-txt {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 .sub-text {
   font-size: 2.3rem;
@@ -235,3 +235,36 @@ table {
       .menu-modal-options li:hover {
         color: #f98333;
         cursor: pointer; }
+
+.nav {
+  height: 100px;
+  width: 100%;
+  position: relative; }
+  .nav__options {
+    color: #7d7d7d;
+    list-style: none;
+    display: flex;
+    z-index: 1; }
+    .nav__options-item {
+      font-size: 2rem;
+      padding: 3rem; }
+  .nav__logo-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0; }
+  .nav__hamburger-menu {
+    cursor: pointer;
+    z-index: 1; }
+    .nav__hamburger-menu:hover .hamburger-bar {
+      background: #f98333; }
+  .nav .hamburger-bar {
+    height: 2px;
+    width: 30px;
+    background: #7d7d7d;
+    margin: 10px; }
+
+.gallery {
+  height: 1000px;
+  width: 100%; }

@@ -55,7 +55,7 @@ li {
   font-family: 'Amaranth', sans-serif; }
 
 .sm-txt {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 .sub-text {
   font-size: 2.3rem;
@@ -268,7 +268,7 @@ table {
 .background {
   height: 100%;
   width: 100%;
-  background: url("https://images.pexels.com/photos/2121348/pexels-photo-2121348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("/assets/outside.jpeg");
   position: fixed;
   z-index: -5;
   background-size: cover; }
@@ -283,13 +283,15 @@ table {
 .artists {
   min-height: 1500px;
   width: 100%; }
+  .artists .sm-txt {
+    font-size: 2.1rem; }
 
 .artist {
   height: 300px;
   margin-bottom: 10rem; }
   .artist h2 {
     color: #dedede;
-    border-left: 10px solid #fe7011;
+    border-left: 5px solid #fe7011;
     padding-left: 2rem; }
   .artist__image {
     width: 25%;
@@ -299,7 +301,7 @@ table {
       width: 100%;
       filter: grayscale(100%); }
   .artist__social-media {
-    color: #f98333;
+    color: #e89861;
     text-align: right;
     position: absolute;
     bottom: 0;

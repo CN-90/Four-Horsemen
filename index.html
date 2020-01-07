@@ -15,8 +15,8 @@
       integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="menu-modal" class="menu-modal">
@@ -28,15 +28,17 @@
           <ul>
             <li class="menu-modal-option">HOME</li>
             <li class="menu-modal-option">
-              <a class='link' href="artists.html">ARTISTS</a class='link'>
+              <a class="link" href="artists.html">ARTISTS</a>
             </li>
-            <li class="menu-modal-option">GALLERY</li>
+            <li class="menu-modal-option">
+              <a href="gallery.html" class="link">GALLERY</a>
+            </li>
             <li class="menu-modal-option">CONTACT</li>
           </ul>
         </div>
       </div>
     </div>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__video_container">
         <video autoplay loop>
           <source src="./assets/video.mp4" type="video/mp4" />
@@ -44,14 +46,20 @@
       </div>
       <nav id="hero__nav" class="nav">
         <div class="logo-box pt-5">
-          <img src="./assets/horselogo.png" alt="horse-logo" />
+          <img
+            src="./assets/horselogo.png"
+            data-aos="fade-in"
+            data-aos-delay="450"
+            data-aos-anchor-placement="center-center"
+            alt="horse-logo"
+          />
         </div>
         <div id="hamburger" class="hero__hamburger-menu hidden">
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
         </div>
-        <ul class="hero__options">
+        <ul class="hero__options" data-aos="fade-in" data-aos-delay="500">
           <li class="hero__options-item">
             <a class="active link" href="index.html">HOME</a>
           </li>
@@ -59,29 +67,67 @@
             <a class="link" href="artists.html">ARTISTS</a>
           </li>
           <li class="hero__options-item">
-            <a class="link" href="#">GALLERY</a>
+            <a class="link" href="gallery.html">GALLERY</a>
           </li>
           <li class="hero__options-item">
             <a class="link" href="#contact">CONTACT</a>
           </li>
         </ul>
         <div class="logo-box pt-5">
-          <img src="./assets/horselogoleft.png" alt="horse-logo" />
+          <img
+            src="./assets/horselogoleft.png"
+            data-aos="fade-i"
+            data-aos-delay="550"
+            data-aos-anchor-placement="center-center"
+            alt="horse-logo"
+          />
         </div>
       </nav>
-      <div class="hero__text-box center">
-        <h1 class="header-primary">FOUR HORSEMEN</h1>
-        <h3 class="d-gray light header-tertiary">TATTOO & PIERCING</h3>
-        <div class="hero__text-box_btn-container">
-          <button class="btn btn-orange bold pt-5">BOOK APPOINTMENT</button>
+      <div class="hero__text-box center" id="text-box">
+        <h1
+          class="header-primary"
+          data-aos="fade-up"
+          data-aos-anchor="#about-title"
+        >
+          FOUR HORSEMEN
+        </h1>
+        <h3
+          class="l-orange light header-tertiary"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-anchor="#about-title"
+        >
+          TATTOO & PIERCING
+        </h3>
+        <div class="hero__text-box_btn-container" id="cta">
+          <button
+            class="btn btn-orange bold pt-5"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-anchor="#about-title"
+          >
+            BOOK APPOINTMENT
+          </button>
         </div>
       </div>
       <div class="hero__logo-container">
         <div class="logo-box">
-          <img src="./assets/horselogo.png" alt="horse-logo" />
+          <img
+            src="./assets/horselogo.png"
+            data-aos="fade-in"
+            data-aos-delay="650"
+            data-aos-anchor="#hero"
+            alt="horse-logo"
+          />
         </div>
         <div class="logo-box">
-          <img src="./assets/horselogoleft.png" alt="horse-logo" />
+          <img
+            src="./assets/horselogoleft.png"
+            data-aos="fade-in"
+            data-aos-delay="750"
+            data-aos-anchor="#hero"
+            alt="horse-logo"
+          />
         </div>
       </div>
     </section>
@@ -95,17 +141,46 @@
               class="about__img-container_img-one"
               src="./assets/tattoo_parlor.jpg"
               alt=""
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#cta"
+              data-aos-delay="200"
             />
             <img
+              id="img-two"
               class="about__img-container-img-two"
               src="./assets/tattoo.jpg"
               alt=""
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#cta"
+              data-aos-delay="300"
             />
           </div>
           <div class="about__content-text pl-5">
-            <h2 class="light white header-secondary">ABOUT US</h2>
-            <div class="separator"></div>
-            <p class="l-gray sub-text pt-3">
+            <h2
+              id="about-title"
+              class="light white header-secondary"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#cta"
+            >
+              ABOUT US
+            </h2>
+            <div
+              class="separator"
+              data-aos="fade-right"
+              data-aos-delay="250"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#cta"
+            ></div>
+            <p
+              class="l-gray sub-text pt-3"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#cta"
+            >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
               laudantium explicabo! Rem veniam soluta, dolorum laudantium
               numquam nisi! Ex, tempore libero repellendus magni sint quidem ad
@@ -114,10 +189,10 @@
               commodi non veritatis. Quos, omnis voluptatem!
             </p>
             <div class="about__content-btn-container">
-              <a  href='artists.html'>
-              <button class="about__content-btn btn btn-orange bold pt-5">
-                VIEW ARTISTS
-              </button>
+              <a href="artists.html">
+                <button class="about__content-btn btn btn-orange bold pt-5">
+                  VIEW ARTISTS
+                </button>
               </a>
             </div>
           </div>
@@ -129,51 +204,186 @@
       <div class="contact__background-img"></div>
 
       <div class="container">
-        <h2 class="light white header-secondary pt-10">FOUR HORSEMEN</h2>
-        <div class="separator"></div>
+        <h2
+          class="light white header-secondary pt-10"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-anchor-placement="center-center"
+          data-aos-anchor="#about-title"
+        >
+          FOUR HORSEMEN
+        </h2>
+        <div
+          class="separator"
+          data-aos="fade-right"
+          data-aos-delay="250"
+          data-aos-anchor-placement="center-center"
+          data-aos-anchor="#about-title"
+        ></div>
 
         <div class="contact__content flex-row">
           <div class="contact__content-details">
-            <p class="white sm-txt pt-1">5732 Fake St, Tucson, Arizona</p>
-            <p class="white sm-txt pt-1">(520) 555-5555</p>
+            <p
+              class="white sm-txt pt-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#about-title"
+            >
+              5732 Fake St, Tucson, Arizona
+            </p>
+            <p
+              class="white sm-txt pt-1"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-anchor-placement="center-center"
+              data-aos-anchor="#about-title"
+            >
+              (520) 555-5555
+            </p>
             <table class="pt-5">
               <tr>
-                <td><p class="l-gray pb-1 sm-txt">Monday</p></td>
                 <td>
-                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                  <p
+                    class="l-gray pb-1 sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    Monday
+                  </p>
+                </td>
+                <td>
+                  <p
+                    class="l-gray fr sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    10AM - 10PM
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td><p class="l-gray pb-1 sm-txt">Tuesday</p></td>
                 <td>
-                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                  <p
+                    class="l-gray pb-1 sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    Tuesday
+                  </p>
+                </td>
+                <td>
+                  <p
+                    class="l-gray fr sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    10AM - 10PM
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td><p class="l-gray pb-1 sm-txt">Wednesday</p></td>
                 <td>
-                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                  <p
+                    class="l-gray pb-1 sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    Wednesday
+                  </p>
+                </td>
+                <td>
+                  <p
+                    class="l-gray fr sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    10AM - 10PM
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td><p class="l-gray pb-1 sm-txt">Thursday</p></td>
                 <td>
-                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                  <p
+                    class="l-gray pb-1 sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    Thursday
+                  </p>
+                </td>
+                <td>
+                  <p
+                    class="l-gray fr sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    10AM - 10PM
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td><p class="l-gray pb-1 sm-txt">Friday</p></td>
                 <td>
-                  <p class="l-gray fr sm-txt">10AM - 10PM</p>
+                  <p
+                    class="l-gray pb-1 sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="450"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    Friday
+                  </p>
+                </td>
+                <td>
+                  <p
+                    class="l-gray fr sm-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="450"
+                    data-aos-anchor-placement="center-center"
+                    data-aos-anchor="#about-title"
+                  >
+                    10AM - 10PM
+                  </p>
                 </td>
               </tr>
             </table>
 
             <div id="contact-button" class="hero__text-box_btn-container">
-              <button class="btn btn-orange bold pt-5">BOOK APPOINTMENT</button>
+              <button
+                class="btn btn-orange bold pt-5"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-anchor-placement="center-center"
+                data-aos-anchor="#about-title"
+              >
+                BOOK APPOINTMENT
+              </button>
             </div>
           </div>
-          <div id="map" class="contact__content-map-location"></div>
+          <div
+            id="map"
+            class="contact__content-map-location"
+            data-aos="fade-left"
+            data-aos-delay="150"
+            data-aos-anchor-placement="center-center"
+            data-aos-anchor="#about-title"
+          ></div>
         </div>
       </div>
     </section>
@@ -197,8 +407,11 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="index.js"></script>
-    <script src="/scripts/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/scripts/modal.js" type="text/javascript"></script>
+    <script src="/scripts/aos.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZk5U2-l6vwyz4SsgjCpv_lMTswG1Rg3M&callback=initMap"
       async

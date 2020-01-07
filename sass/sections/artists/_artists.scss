@@ -45,7 +45,7 @@
 .background {
   height: 100%;
   width: 100%;
-  background: url('https://images.pexels.com/photos/2121348/pexels-photo-2121348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background: url('/assets/outside.jpeg');
   position: fixed;
   z-index: -5;
   background-size: cover;
@@ -63,6 +63,10 @@
 .artists {
   min-height: 1500px;
   width: 100%;
+
+  .sm-txt {
+    font-size: 2.1rem;
+  }
 }
 
 .artist {
@@ -71,7 +75,7 @@
 
   h2 {
     color: #dedede;
-    border-left: 10px solid $orange-color;
+    border-left: 5px solid $orange-color;
     padding-left: 2rem;
   }
 

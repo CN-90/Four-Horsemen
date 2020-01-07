@@ -1,4 +1,5 @@
 // GOOGLE MAP
+//
 
 function initMap() {
   // Styles a map in night mode.
